@@ -2,9 +2,25 @@
 
 *Deutsch: [README.de.md](README.de.md)*
 
+<!-- byline -->
+A plugin by **Akrota and Claude**.
+
+<!-- lang-note -->
+*Works in **English and German**: menus and texts follow KOReader's language. A German description is at the bottom of this page.*
+
 A KOReader plugin that reminds you of the story so far, spoiler-free and exactly up to where you are in the book.
 
 > **Status: beta (0.9.9).** All automated tests pass on Linux. Tested on a Kobo with real Gemini and Claude requests. The other AI providers have not been tried with real requests yet.
+
+## Screenshots
+
+*The screenshots show the English interface; in a German KOReader the texts are German.*
+
+<table>
+<tr><td align="center" valign="top" width="33%"><img src="docs/screenshots/menu.png" width="260" alt="Main menu"><br><sub>Main menu</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/recap.png" width="260" alt="Recap: the story so far, up to your place in the book"><br><sub>Recap: the story so far, up to your place in the book</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/lexicon.png" width="260" alt="Story lexicon: categories"><br><sub>Story lexicon: categories</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><img src="docs/screenshots/lexicon-entry.png" width="260" alt="A lexicon entry with status, relation and timeline"><br><sub>A lexicon entry with status, relation and timeline</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/break-prompt.png" width="260" alt="Offer of a recap after a break"><br><sub>Offer of a recap after a break</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/book-menu.png" width="260" alt="Book and notes submenu"><br><sub>Book and notes submenu</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><img src="docs/screenshots/settings.png" width="260" alt="AI settings"><br><sub>AI settings</sub></td></tr>
+</table>
 
 ## Features
 
@@ -70,6 +86,45 @@ There is no warranty and no guaranteed support. Bug reports are welcome as [issu
 
 How the AI providers are connected was inspired by the [X-Ray](https://github.com/ultimatejimmy/xray.koplugin) plugin for KOReader.
 
+## More plugins by Akrota and Claude
+
+- [Comic Display](https://github.com/Akrota/koreader-comic-display): Refresh against ghosting, dark borders and a clock for comics
+- [Levels / Tonwerte](https://github.com/Akrota/koreader-comic-levels): Tone curve for comics
+- [Comic Panel Zoom](https://github.com/Akrota/koreader-comic-panel-zoom): Panel-by-panel view (fork of JorgeTheFox's plugin)
+- [Comic Dual Page](https://github.com/Akrota/koreader-comic-dual-page): Double pages with detection (fork of KORComic)
+- [CBZ Converter](https://github.com/Akrota/koreader-cbz-converter): Convert comics, PDF and EPUB to CBZ on the device
+- [Folder to series](https://github.com/Akrota/koreader-folder-to-series): Comic folders to series with volume numbers
+- [Drive Library](https://github.com/Akrota/koreader-drive-library): Google Drive as a cloud library
+- [Guitar Tab Reader](https://github.com/Akrota/koreader-guitar-tab-reader): Guitar tabs and chords for e-ink
+- [Wi-Fi while charging](https://github.com/Akrota/koreader-wifi-while-charging): Keep Wi-Fi on while charging
+- [Zen page browser gesture](https://github.com/Akrota/koreader-zen-page-browser-gesture): Gesture for the ZenOS page browser
+
 ## License
 
 [MIT](LICENSE)
+
+---
+
+## Deutsch (Kurzbeschreibung)
+
+Ein KOReader-Plugin, das dich spoilerfrei an die bisherige Geschichte erinnert, genau bis zu deiner Stelle im Buch.
+
+> **Stand: Beta (0.9.9).** Alle automatischen Tests bestehen unter Linux. Auf dem Kobo mit echten Gemini- und Claude-Anfragen getestet. Die anderen KI-Anbieter sind mit echten Anfragen noch nicht ausprobiert.
+
+### Was es kann
+
+- **Rückblick nach einer Pause:** Öffnest du ein Buch nach einigen Tagen wieder, siehst du, was bisher geschah und wo die Geschichte gerade steht.
+- **Story-Chronik:** Alle gelesenen Kapitel mit kurzer Zusammenfassung und deinen eigenen Notizen, dazu ein Sprung zu jedem Kapitel.
+- **Reihen-Rückblick:** Beim Start eines neuen Bandes erfährst du, was in den vorherigen Bänden passiert ist.
+  - Die Zusammenfassung jedes Bandes wird zusätzlich in einem Reihen-Archiv gesichert. Gelöschte Bücher bleiben also im Rückblick.
+  - Hast du einen Band woanders gelesen, zum Beispiel auf Papier, kannst du ihn als „Schon woanders gelesen“ markieren.
+  - Hast du die früheren Bände gar nicht digital, kann die KI sie aus dem Internet zusammenfassen. Das ist deutlich gekennzeichnet und zeigt die Quellen.
+  - Übersetzungen mit anderem Reihennamen werden einmal nachgefragt und danach verknüpft.
+  - Die Zusammenfassung eines fertig gelesenen Bandes entsteht in einer eigenen Anfrage (Handlung, Figuren, Stand am Ende). Im ☰ des Reihen-Rückblicks lässt sie sich neu schreiben.
+- **Wer war das noch mal?** Einen Namen markieren und „Story-Kontext“ antippen. Du siehst, wer das ist, die Beziehung zur Hauptfigur und alles Bisherige, auf Wunsch auch die Textstellen. Das **Story-Lexikon** listet alle Figuren, Orte, Gegenstände und Gruppen nach Kategorien. Suche über alle Kategorien (findet sie nichts, kann die KI in den gelesenen Kapiteln nachsehen), Sortierung A–Z, nach Häufigkeit oder nach letztem Auftreten.
+- **Geschichte bisher neu schreiben:** ein frischer Überblick aus allen Kapitel-Zusammenfassungen, eine Anfrage.
+- **Eigene Notizen** zu jedem Kapitel.
+- **KI-Notizen korrigieren:** Du kannst Zusammenfassungen von Hand verbessern, das Original bleibt erhalten.
+- **Frühere KI-Notizen:** Erstellst du die KI-Notizen neu (z. B. mit einem anderen Anbieter), bleibt der alte Stand aufgehoben, bis zu zwei pro Anbieter. Du kannst ohne neue Anfragen zurückwechseln.
+
+Die ausführliche deutsche Anleitung steht in der [README.de.md](README.de.md).

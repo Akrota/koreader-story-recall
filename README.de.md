@@ -2,9 +2,25 @@
 
 *English: [README.md](README.md)*
 
+<!-- byline -->
+Ein Plugin von **Akrota und Claude**.
+
+<!-- lang-note -->
+*Funktioniert auf **Deutsch und Englisch**: Menüs und Texte richten sich nach der KOReader-Sprache.*
+
 Ein KOReader-Plugin, das dich spoilerfrei an die bisherige Geschichte erinnert, genau bis zu deiner Stelle im Buch.
 
 > **Stand: Beta (0.9.9).** Alle automatischen Tests bestehen unter Linux. Auf dem Kobo mit echten Gemini- und Claude-Anfragen getestet. Die anderen KI-Anbieter sind mit echten Anfragen noch nicht ausprobiert.
+
+## Bildschirmfotos
+
+*Die Bildschirmfotos zeigen die englische Oberfläche; in einem deutschen KOReader sind die Texte deutsch.*
+
+<table>
+<tr><td align="center" valign="top" width="33%"><img src="docs/screenshots/menu.png" width="260" alt="Hauptmenü"><br><sub>Hauptmenü</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/recap.png" width="260" alt="Rückblick: die Geschichte bisher, bis zu deiner Stelle"><br><sub>Rückblick: die Geschichte bisher, bis zu deiner Stelle</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/lexicon.png" width="260" alt="Story-Lexikon: Kategorien"><br><sub>Story-Lexikon: Kategorien</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><img src="docs/screenshots/lexicon-entry.png" width="260" alt="Ein Lexikon-Eintrag mit Zustand, Beziehung und Verlauf"><br><sub>Ein Lexikon-Eintrag mit Zustand, Beziehung und Verlauf</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/break-prompt.png" width="260" alt="Angebot eines Rückblicks nach einer Pause"><br><sub>Angebot eines Rückblicks nach einer Pause</sub></td><td align="center" valign="top" width="33%"><img src="docs/screenshots/book-menu.png" width="260" alt="Untermenü Buch und Notizen"><br><sub>Untermenü Buch und Notizen</sub></td></tr>
+<tr><td align="center" valign="top" width="33%"><img src="docs/screenshots/settings.png" width="260" alt="KI-Einstellungen"><br><sub>KI-Einstellungen</sub></td></tr>
+</table>
 
 ## Was es kann
 
@@ -69,6 +85,19 @@ Es gibt keine Garantie und keinen festen Support. Fehlermeldungen sind als [Issu
 ## Danksagung
 
 Die Anbindung der KI-Anbieter ist vom KOReader-Plugin [X-Ray](https://github.com/ultimatejimmy/xray.koplugin) inspiriert.
+
+## Weitere Plugins von Akrota und Claude
+
+- [Comic Display](https://github.com/Akrota/koreader-comic-display): Refresh gegen Ghosting, dunkle Ränder und Uhr für Comics
+- [Levels / Tonwerte](https://github.com/Akrota/koreader-comic-levels): Tonwertkurve für Comics
+- [Comic Panel Zoom](https://github.com/Akrota/koreader-comic-panel-zoom): Panel-für-Panel-Ansicht (Fork von JorgeTheFox)
+- [Comic Dual Page](https://github.com/Akrota/koreader-comic-dual-page): Doppelseiten mit Erkennung (Fork von KORComic)
+- [CBZ Converter](https://github.com/Akrota/koreader-cbz-converter): Comics, PDF und EPUB auf dem Gerät in CBZ umwandeln
+- [Folder to series](https://github.com/Akrota/koreader-folder-to-series): Comic-Ordner zu Reihen mit Bandnummern
+- [Drive Library](https://github.com/Akrota/koreader-drive-library): Google Drive als Cloud-Bibliothek
+- [Guitar Tab Reader](https://github.com/Akrota/koreader-guitar-tab-reader): Gitarren-Tabs und Chords für E-Ink
+- [Wi-Fi while charging](https://github.com/Akrota/koreader-wifi-while-charging): WLAN anlassen, solange das Gerät lädt
+- [Zen page browser gesture](https://github.com/Akrota/koreader-zen-page-browser-gesture): Geste für den ZenOS-Seitenbrowser
 
 ## Lizenz
 
