@@ -1,4 +1,73 @@
-# Story Recall – Änderungen
+# Changelog – Story Recall
+
+*Deutsche Fassung weiter unten.*
+
+## 0.9.9 (Nov 2026)
+
+**New**
+- **Series lexicon:** the story lexicon of a later volume carries on the entries of the earlier volumes, as if the series were one long book. Facts add up, status and relation come from the newest state, and every entry shows in which volume it first and last appeared ("Vol. 1 · …"). Earlier volumes marked as "finished" count in full.
+- **Story Recall for comics** (image pages, see README).
+- **Wi-Fi stays on while the AI is working**, and while plugged in the device also stays awake during pauses and while waiting for the daily limit. Afterwards it sleeps normally again.
+
+**Improved**
+- **Longer pauses when the provider is overloaded:** 2, 4, 8 minutes, then 8 minutes each.
+- **Resting time for the fallback model:** after switching, Story Recall stays on the fallback model for 15 minutes (one hour after a daily limit) instead of trying the overloaded main model again for every batch. This saves wasted requests of the free daily limit.
+- Request timeout: 4 minutes for the first response, 5 minutes in total.
+
+## After 0.9.8 (24–25 Oct 2026, no new version number)
+
+**New**
+- **When overloaded: wait or use another model** (AI settings). The default is "wait": Story Recall stays with the chosen model and tries again after a pause, so all notes of a book come from the same model. With "other model" it only switches after three failures in a row (or at once on a daily limit).
+- **Guide, pages "Costs (roughly)" and "Saving tips":** approximate costs for short, medium and long books with Claude Haiku, Claude Sonnet and Gemini, plus four tips with the menu path.
+- A note on "Process the whole book when opening" that it stays spoiler-free anyway.
+- When all chapters are done, the status line says "tap to recreate".
+- **Earlier AI notes:** "Recreate all AI notes" keeps the previous state, up to two per provider. Under Book & notes → "Earlier AI notes" you can switch back without new requests, or delete one. Your own notes and reading position are not touched.
+- **Guide, second page "Good to know":** rewrite the story so far, status line, improving AI notes, spoiler-free.
+- **Live progress:** with the Story Recall menu open, "AI notes: x/y" updates itself after every finished batch and every status change.
+
+**Improved**
+- **Prompt for the chapter notes** reworked (after comparing with X-Ray, KO Catchup and Reading Companion): if the book leaves something open, the AI notes it as open instead of resolving it; uncertain details are left out. Neutral examples, the rules for lexicon entries as a short list.
+- The status line tells "Pause: overloaded" and "Pause: answer unusable" apart.
+
+**Fixed**
+- Claude sometimes wrote only a placeholder ("x") instead of a summary, or left it empty. Such answers are no longer saved; saved placeholders are removed when the book is opened and requested again.
+- Leftovers of the answer format at the end of texts (for example "}, {") are removed, also from saved notes.
+
+## 0.9.8 (24 Oct 2026)
+
+**New**
+- **Story lexicon:** search across all categories. If the search finds nothing, the AI can look it up (only in the chapters already read). Sorting can be switched: A–Z, frequency, last seen. Small categories (under 3 entries) are grouped under "Other", characters and places always stay. Characters show their current status (for example missing, allied).
+- **Rewrite the story so far:** in the main menu and in the ☰ of the recap, as its own request from all chapter summaries.
+- **Series recap:** the summary of a finished volume is written in its own request (three paragraphs: plot, characters, state at the end). It can be rewritten from the ☰ of the series recap.
+- **Ask first:** after a break and when starting a new volume, Story Recall can ask whether you want to see the recap.
+- **Note when the AI notes stop:** one window per incident for a rejected or expired key and missing credit, with a button to the AI settings.
+- **Status line "AI notes: x/y":** when all chapters are done, tapping offers to recreate all notes. Likewise after a new key.
+- **How does it work?** as the last entry under Settings.
+
+**Improved**
+- Menu reorganised, every menu fits on one screen. Story Recall is at the top of the Tools menu.
+- Automatic AI notes can be chosen: with Wi-Fi, only while charging, or only on request. Reading time only counts when you really read.
+- Waiting times and daily limits are recognised for all providers, work continues by itself afterwards.
+- Requests run in the background, KOReader stays usable.
+
+**Fixed**
+- With Claude, "Rewrite the story so far" failed because of the answer template.
+- The lexicon sorting "frequency" had no effect.
+
+## 0.9.5 (22 Oct 2026)
+
+- Fixed: the story lexicon closed the list when tapping an entry.
+- New tests for the lexicon.
+
+## 0.9.4 (22 Oct 2026)
+
+- Recap as the main window with the buttons Chronicle, Story lexicon, + Note and Continue reading.
+- Story lexicon with categories, duplicate entries merged.
+- Fixed: empty last page of the chronicle, recap for finished books, text passages for finished books.
+
+---
+
+# Deutsch
 
 ## 0.9.9 (Nov. 2026)
 
